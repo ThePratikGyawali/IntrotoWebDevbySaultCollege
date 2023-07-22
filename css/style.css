@@ -1,23 +1,21 @@
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
-  color: #333;
 }
 
 .navbar {
-  background-color: #007bff;
-  padding: 10px;
+  background-color: black;
+  border: 3px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-container {
-  max-width: 800px;
+  width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .contents {
@@ -26,27 +24,65 @@ body {
 }
 
 .contents li {
-  margin-right: 15px;
+  margin-left: 20px;
+  position: relative;
 }
 
 .contents li a {
-  color: #fff;
   text-decoration: none;
+  color: white;
+  padding: 10px;
 }
 
 .main-content {
-  max-width: 800px;
-  margin: 30px auto;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: black;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.result {
+  margin-top: 20px;
   padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid red;
   border-radius: 5px;
 }
 
-.main-content h1 {
-  margin-bottom: 15px;
+@media (min-width: 768px) {
+  .result {
+    font-size: 24px;
+    color: black;
+  }
 }
 
-form input {
-  display: block;
-  margin-bottom: 10px;
+@media (max-width: 767px) {
+  .result {
+    font-size: 18px;
+    color: blue;
+  }
+}
