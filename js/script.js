@@ -1,6 +1,7 @@
 // below JavaScript codes are written by taking help from online resources, not by Pratik Gyawali himself fully. 
+function convert(event) {
+  event.preventDefault(); // Prevent form submission
 
-function convert() {
   const choiceInput = parseInt(document.getElementById("choice").value);
   const valueInput = parseFloat(document.getElementById("value").value);
   let result = "";
