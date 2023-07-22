@@ -23,7 +23,7 @@
     <p>1. Weights (Pounds to Kilogram)</p>
     <p>2. Distance (Miles to Kilometers)</p>
     <p>3. Temperature (Fahrenheit to Celsius)</p> 
-    <form onsubmit="convert(); return false;">
+    <form onsubmit="convert(event)">
       <input type="number" id="choice" placeholder="Enter your choice (1, 2, or 3)">
       <input type="number" id="value" placeholder="Enter the value to convert">
       <button type="submit">Convert</button>
